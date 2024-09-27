@@ -1,0 +1,49 @@
+/* Reset margin and padding specifically for the html, body, and navbar */
+html, body {
+    margin: 0; /* Ensures no extra space at the top */
+    padding: 0; /* Removes padding */
+}
+
+/* Specific styling for the navbar */
+.navbar {
+    margin: 0; /* Removes any margin around the navbar */
+    padding: 10px 0; /* Adjust padding inside the navbar */
+    background-color: #111; /* Dark background for the navigation bar */
+    box-sizing: border-box; /* Ensures padding does not affect the height */
+}
+
+/* Styling for the list inside the navbar */
+.nav-links {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Align links side by side */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Space between each link */
+    margin: 0; /* Ensures no extra margin */
+    padding: 0; /* Ensures no extra padding */
+}
+
+/* Styling each list item */
+.nav-links li {
+    display: inline-block; /* Ensures items are treated as inline blocks */
+}
+
+/* Styling for the anchor tags (links) */
+.nav-links a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px; /* Adjust spacing as needed */
+    transition: color 0.3s;
+}
+
+/* Hover effect for the links */
+.nav-links a:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+/* Styling for the active link */
+.nav-links .active {
+    color: #fff;
+    text-decoration: underline;
+}
