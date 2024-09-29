@@ -1,0 +1,71 @@
+/* Resetting default padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* You can change this to any preferred font */
+}
+
+/* Section with the background image that takes up part of the screen */
+.background-section {
+    height: 75vh; 
+    width:100%;
+    background-image: url('landscaping.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Makes the image cover the section */
+    background-position: top; /* Adjust to 'center' or 'top' as needed */
+    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the whole image is visible */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 15px 0; /* Spacing around the navbar */
+    position: fixed; /* Keep navbar fixed at the top */
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays above content */
+    top: 0; /* Sticks the navbar to the top of the page */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Make links sit side by side */
+    justify-content: center; /* Center the links */
+    gap: 30px; /* Add space between links */
+}
+
+.nav-links li {
+    display: inline-block; /* Ensures items are treated as inline blocks */
+}
+
+.nav-links a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight for a clean look */
+    font-size: 16px; /* Adjust the size as needed */
+    letter-spacing: 1px; /* Adds some spacing between letters */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+    padding: 5px 10px; /* Padding around each link */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #ddd; /* Slight color change on hover */
+}
+
+/* Active link styling */
+.nav-links .active {
+    font-weight: bold; /* Bold the active link */
+    color: #fff;
+    text-decoration: underline; /* Adds underline to the active link */
+}
+
+/* Content placeholder to ensure space when navbar is fixed */
+.content {
+    margin-top: 80px; /* Adjust based on the height of the navbar */
+    padding: 20px;
+}
