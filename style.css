@@ -9,16 +9,28 @@ body {
     font-family: Arial, sans-serif; /* You can change this to any preferred font */
 }
 
-/* Section with the background image that takes up part of the screen */
-.background-section {
-    height: 75vh; 
-    width:100%;
-    background-image: url('landscaping.jpg'); /* Replace with the path to your image */
-    background-size: cover; /* Makes the image cover the section */
-    background-position: top; /* Adjust to 'center' or 'top' as needed */
-    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
-    background-repeat: no-repeat;
-    background-size: contain; /* Ensures the whole image is visible */
+.background {
+    position: relative;
+    width: 100%;
+
+}
+
+.background img{
+    max-height: 100%;
+    height:auto;
+
+}
+
+.background-text {
+
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Offsets by 50% to perfectly center */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem; /* Adjust the font size as needed */
 }
 
 /* Navbar styles */
