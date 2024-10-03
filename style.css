@@ -35,7 +35,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* Less transparency */
     padding: 15px 0; /* Spacing around the navbar */
     position: fixed; /* Keep navbar fixed at the top */
     width: 100%;
@@ -80,4 +80,11 @@ body {
 .content {
     margin-top: 80px; /* Adjust based on the height of the navbar */
     padding: 20px;
+}
+
+
+::-webkit-scrollbar {
+
+    width: 15px;
+
 }
