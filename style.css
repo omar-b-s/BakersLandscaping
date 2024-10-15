@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif; /* You can change this to any preferred font */
+html, body {
+    min-height: 100%;
+    overflow: auto; /* Ensure overflow is set to auto for scrolling */
 }
 
 .background {
@@ -80,11 +81,64 @@ body {
 .content {
     margin-top: 80px; /* Adjust based on the height of the navbar */
     padding: 20px;
+
+    color: rgb(9, 131, 9);
 }
+
 
 
 ::-webkit-scrollbar {
 
     width: 15px;
+
+}
+
+ /* Content placeholder to ensure space when navbar is fixed */
+.content {
+    /* Flexbox centering */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    min-height: calc(26vh - 80px); /* Ensures the content takes the full height minus the navbar */
+    text-align: center; /* Ensures the text inside is centered */
+    transform: translateY(80px);
+    font-size: 40px;
+}
+
+/* Center the contact info */
+.info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info p {
+    margin: 20px 0; /* Adds spacing between the lines of contact information */
+    font-size: 20px;
+}
+
+.info a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none;
+    
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 40%;
+    margin: 20px auto; /* Center the horizontal rule */
+}
+
+.about{
+    margin-top: 50px;
+    margin-left: 400px;
+    font-size: 30px;
+    color: rgb(9, 131, 9);
+    
+}
+
+.logo {
+    margin-left: 270px;
 
 }
